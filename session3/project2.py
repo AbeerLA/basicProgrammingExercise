@@ -1,4 +1,4 @@
-#CALCULATE ITERGERS
+# calculates the sum of digits 
 a=34
 b=16
 sum= a+b
