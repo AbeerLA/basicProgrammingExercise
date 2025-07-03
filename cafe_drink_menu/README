@@ -1,0 +1,29 @@
+# ☕ Cafe Drink Menu
+
+## 📌 About This Project
+
+This project is inspired by my love for cafes and the different types of drinks they serve. I wanted to create a digital drink menu that separates coffee and non-coffee items, displays images of each, and shows different sizes and prices — all structured with Object-Oriented Programming in Python, and displayed using a clean HTML/CSS layout.
+
+## 🧱 Features
+
+- 🔹 Grouped drink menu (Coffee & Non-Coffee)
+- 🔹 Each drink shows available sizes and prices
+- 🔹 Images for each drink
+- 🔹 OOP design using Python (with inheritance and polymorphism)
+- 🔹 HTML/CSS layout with 2-column visual menu
+
+---
+
+## 🧠 OOP Structure
+
+- `Drink` – Abstract base class
+- `CoffeeDrink` – Inherits from `Drink`
+- `NonCoffeeDrink` – Inherits from `Drink`
+- `drinks.json` – Stores all drinks with type, sizes, and image path
+#DEMO link for youtube
+https://youtu.be/a3BauIxERmQ?feature=shared
+---
+
+
+```bash
+cd cafe_drink_menu
