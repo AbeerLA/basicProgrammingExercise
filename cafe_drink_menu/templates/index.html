@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cafe Drink Menu</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+    <h1>Our Cafe Drink Menu</h1>
+
+    <div id="filters">
+        <button onclick="filterDrinks('Coffee')">Show Only Coffee</button>
+        <button onclick="filterDrinks('Non-Coffee')">Show Only Non-Coffee</button>
+        <button onclick="filterDrinks('All')">Show All</button>
+    </div>
+
+    <div id="menu">
+        
+        <div class="drink-card coffee">
+            <img src="../static/images/latte.jpg" alt="Latte">
+            <p><strong>Latte</strong> - Espresso-based<br>&rarr; Medium - $4.50<br>&rarr; Large - $5.00</p>
+        </div>
+        
+        <div class="drink-card coffee">
+            <img src="../static/images/americano.jpg" alt="Americano">
+            <p><strong>Americano</strong> - Black Coffee<br>&rarr; Small - $3.00<br>&rarr; Large - $3.50</p>
+        </div>
+        
+        <div class="drink-card non-coffee">
+            <img src="../static/images/green tea.jpg" alt="Green Tea">
+            <p><strong>Green Tea</strong> - Tea<br>&rarr; Small - $2.50<br>&rarr; Large - $3.00</p>
+        </div>
+        
+        <div class="drink-card non-coffee">
+            <img src="../static/images/juice.jpg" alt="Orange Juice">
+            <p><strong>Juice</strong> - Juice<br>&rarr; Medium - $3.50<br>&rarr; Large - $4.00</p>
+        </div>
+        
+    </div>
+
+    <script>
+    function filterDrinks(type) {
+        const allCards = document.querySelectorAll(".drink-card");
+
+        allCards.forEach(card => {
+            const isCoffee = card.classList.contains("coffee");
+            const isNonCoffee = card.classList.contains("non-coffee");
+
+            if (type === "All") {
+                card.style.display = "block";
+            } else if (type === "Coffee" && isCoffee) {
+                card.style.display = "block";
+            } else if (type === "Non-Coffee" && isNonCoffee) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
+    </script>
+</body>
+</html>

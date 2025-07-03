@@ -1,0 +1,62 @@
+[
+    {
+        "type": "CoffeeDrink",
+        "name": "Latte",
+        "coffee_type": "Espresso-based",
+        "sizes": [
+            {
+                "size": "Medium",
+                "price": 4.50
+            },
+            {
+                "size": "Large",
+                "price": 5.00
+            }
+        ]
+    },
+    {
+        "type": "CoffeeDrink",
+        "name": "Americano",
+        "coffee_type": "Black Coffee",
+        "sizes": [
+            {
+                "size": "Small",
+                "price": 3.00
+            },
+            {
+                "size": "Large",
+                "price": 3.50
+            }
+        ]
+    },
+    {
+        "type": "NonCoffeeDrink",
+        "name": "Green Tea",
+        "category": "Tea",
+        "sizes": [
+            {
+                "size": "Small",
+                "price": 2.50
+            },
+            {
+                "size": "Large",
+                "price": 3.00
+            }
+        ]
+    },
+    {
+        "type": "NonCoffeeDrink",
+        "name": "Juice",
+        "category": "Juice",
+        "sizes": [
+            {
+                "size": "Medium",
+                "price": 3.50
+            },
+            {
+                "size": "Large",
+                "price": 4.00
+            }
+        ]
+    }
+]
